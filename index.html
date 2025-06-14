@@ -1,0 +1,1069 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VILLA</title>
+
+  <!-- 
+    - favicon
+  -->
+\
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&family=Poppins:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+
+  <style>
+    .has-scrollbar {
+      display: flex;
+      align-items: center;
+      gap: 30px;
+      overflow-x: auto;
+      scroll-snap-type: inline mandatory;
+      padding-block-end: 20px;
+      margin-block-end: -20px;
+    }
+
+    .scrollbar-item {
+      min-width: 40%;
+      scroll-snap-align: start;
+    }
+
+    .has-scrollbar::-webkit-scrollbar {
+      height: 10px;
+    }
+
+    .has-scrollbar::-webkit-scrollbar-track {
+      outline: 2px solid black;
+      border-radius: 10px;
+    }
+
+    .has-scrollbar::-webkit-scrollbar-thumb {
+      border-radius: 10px;
+      background-color: hsl(214, 72%, 33%);
+      border: 2px solid white;
+    }
+
+    .has-scrollbar::-webkit-scrollbar-button {
+      width: calc(25% - 30px);
+    }
+
+    @media only screen and (max-width: 800px) {
+      .scrollbar-item {
+        min-width: 100%;
+
+      }
+    }
+  </style>
+</head>
+
+<body id="top">
+
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header" data-header>
+
+    <div class="overlay" data-overlay></div>
+
+    <div class="header-top">
+      <div class="container">
+
+        <a href="tel:+01123456790" class="helpline-box">
+
+          <div class="icon-box">
+            <ion-icon name="call-outline"></ion-icon>
+          </div>
+
+          <div class="wrapper">
+            <p class="helpline-title">For Further Inquires :</p>
+
+            <p class="helpline-number">+91 9769539666</p>
+          </div>
+
+        </a>
+
+        <a href="#" class="logo">
+          <!-- <img src="./assets/images/logo.svg" alt="Tourly logo"> -->
+          <h1 style="color: whitesmoke;">VILLA</h1>
+        </a>
+
+        <div class="header-btn-group">
+
+          <button class="search-btn" aria-label="Search">
+            <ion-icon name="search"></ion-icon>
+          </button>
+
+          <button class="nav-open-btn" aria-label="Open Menu" data-nav-open-btn>
+            <ion-icon name="menu-outline"></ion-icon>
+          </button>
+
+        </div>
+
+      </div>
+    </div>
+
+    <div class="header-bottom">
+      <div class="container">
+
+        <ul class="social-list">
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-youtube"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+        <nav class="navbar" data-navbar>
+
+          <div class="navbar-top">
+
+            <a href="#" class="logo">
+              <img src="./assets/images/logo-blue.svg" alt="Tourly logo">
+            </a>
+
+            <button class="nav-close-btn" aria-label="Close Menu" data-nav-close-btn>
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+
+          </div>
+
+          <ul class="navbar-list">
+
+            <li>
+              <a href="#home" class="navbar-link" data-nav-link>home</a>
+            </li>
+
+            <li>
+              <a href="#destination" class="navbar-link" data-nav-link>destination</a>
+            </li>
+
+            <li>
+              <a href="#package" class="navbar-link" data-nav-link>packages</a>
+            </li>
+
+            <li>
+              <a href="#amenities" class="navbar-link" data-nav-link>amenities</a>
+            </li>
+
+            <li>
+              <a href="#gallery" class="navbar-link" data-nav-link>gallery</a>
+            </li>
+
+            <li>
+              <a href="#contact" class="navbar-link" data-nav-link>contact us</a>
+            </li>
+
+          </ul>
+
+        </nav>
+
+        <button class="btn btn-primary">Book Now</button>
+
+      </div>
+    </div>
+
+  </header>
+
+
+
+
+
+  <main>
+    <article>
+
+      <!-- 
+        - #HERO
+      -->
+
+      <section class="hero" id="home">
+        <div class="container">
+
+          <h2 class="h1 hero-title">Your Lonavala Escape</h2>
+
+          <p class="hero-text">
+            Discover your perfect getaway at our premium villa — where comfort, privacy, and nature come together for
+            an unforgettable experience.
+          </p>
+
+          <div class="btn-group">
+            <button class="btn btn-primary">Learn more</button>
+
+            <button class="btn btn-secondary">Book now</button>
+          </div>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #TOUR SEARCH
+      -->
+
+      <section class="tour-search">
+        <div class="container">
+
+          <form action="" class="tour-search-form">
+
+            <div class="input-wrapper">
+              <label for="destination" class="input-label">Enter Name*</label>
+
+              <input type="text" name="name" id="destination" required placeholder="Enter Name"
+                class="input-field">
+            </div>
+
+            <div class="input-wrapper">
+              <label for="people" class="input-label">Max Number*</label>
+
+              <input type="number" name="people" id="people" required placeholder="No.of People" class="input-field">
+            </div>
+
+            <div class="input-wrapper">
+              <label for="checkin" class="input-label">Checkin Date**</label>
+
+              <input type="date" name="checkin" id="checkin" required class="input-field">
+            </div>
+
+            <div class="input-wrapper">
+              <label for="checkout" class="input-label">Checkout Date*</label>
+
+              <input type="date" name="checkout" id="checkout" required class="input-field">
+            </div>
+
+            <button type="submit" class="btn btn-secondary">Inquire now</button>
+
+          </form>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #POPULAR
+      -->
+
+      <section class="popular" id="destination">
+        <div class="container">
+
+          <p class="section-subtitle">Uncover place</p>
+
+          <h2 class="h2 section-title">Popular destination</h2>
+
+          <p class="section-text">
+            Uncover the top places to see in Lonavala, perfectly paired with your villa getaway.
+          </p>
+
+          <ul class="popular-list">
+
+            <li>
+              <div class="popular-card">
+
+                <figure class="card-img">
+                  <img src="./assets/images/tiger_point.webp" alt="San miguel, italy" loading="lazy">
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="card-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                  </div>
+
+                  <p class="card-subtitle">
+                    <a href="#">Lonavala</a>
+                  </p>
+
+                  <h3 class="h3 card-title">
+                    <a href="#">Tiger point</a>
+                  </h3>
+
+                  <p class="card-text">
+                    Stunning valley views and echo point.
+                  </p>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="popular-card">
+
+                <figure class="card-img">
+                  <img src="./assets/images/bushi_dam.webp" alt="Lonavala" loading="lazy">
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="card-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                  </div>
+
+                  <p class="card-subtitle">
+                    <a href="#">Lonavala</a>
+                  </p>
+
+                  <h3 class="h3 card-title">
+                    <a href="#">Bushi Dam</a>
+                  </h3>
+
+                  <p class="card-text">
+                    Famous for monsoon visits and waterfall-like overflow.
+                  </p>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="popular-card">
+
+                <figure class="card-img">
+                  <img src="./assets/images/pawana_lake.jpg" alt="Pawna Lake" loading="lazy">
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="card-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                  </div>
+
+                  <p class="card-subtitle">
+                    <a href="#">Lonavala</a>
+                  </p>
+
+                  <h3 class="h3 card-title">
+                    <a href="#">Pawna Lake</a>
+                  </h3>
+
+                  <p class="card-text">
+                    Ideal for lakeside camping and water views.
+                  </p>
+
+                </div>
+
+              </div>
+            </li>
+            <li>
+              <div class="popular-card">
+
+                <figure class="card-img">
+                  <img src="./assets/images/lohagad.jpg" alt="Lonavala" loading="lazy">
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="card-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                  </div>
+
+                  <p class="card-subtitle">
+                    <a href="#">Lonavala</a>
+                  </p>
+
+                  <h3 class="h3 card-title">
+                    <a href="#">Lohagad Fort</a>
+                  </h3>
+
+                  <p class="card-text">
+                    Popular monsoon trek with scenic landscapes.
+                  </p>
+
+                </div>
+
+              </div>
+            </li>
+            <li>
+              <div class="popular-card">
+
+                <figure class="card-img">
+                  <img src="./assets/images/lionpoint.jpg" alt="Lonavala" loading="lazy">
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="card-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                  </div>
+
+                  <p class="card-subtitle">
+                    <a href="#">Lonavala</a>
+                  </p>
+
+                  <h3 class="h3 card-title">
+                    <a href="#">Lion's Point</a>
+                  </h3>
+
+                  <p class="card-text">
+                    Perfect for sunsets and misty mountain views.
+                  </p>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="popular-card">
+
+                <figure class="card-img">
+                  <img src="./assets/images/localmarket.jpg" alt="Lonavala" loading="lazy">
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="card-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                  </div>
+
+                  <p class="card-subtitle">
+                    <a href="#">Lonavala</a>
+                  </p>
+
+                  <h3 class="h3 card-title">
+                    <a href="#">Lonavala Market</a>
+                  </h3>
+
+                  <p class="card-text">
+                    Famous for chikki, fudge, and local souvenirs.
+                  </p>
+
+                </div>
+
+              </div>
+            </li>
+          </ul>
+
+          <button class="btn btn-primary">More destintion</button>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #PACKAGE
+      -->
+
+      <section class="package" id="package">
+        <div class="container">
+
+          <p class="section-subtitle">Popular Packages</p>
+          <h2 class="h2 section-title">Our Villa Packages</h2>
+
+          <p class="section-text">
+            Discover the perfect villa package in Lonavala — tailored for peaceful weekday escapes and exciting weekend
+            retreats.
+          </p>
+
+          <ul class="package-list">
+
+            <!-- Weekday Package -->
+            <li>
+              <div class="package-card">
+
+                <figure class="card-banner">
+                  <img src="./assets/images/package-1.jpg" alt="Weekday Bliss in Lonavala" loading="lazy">
+                </figure>
+
+                <div class="card-content">
+                  <h3 class="h3 card-title">Weekday Bliss in Lonavala</h3>
+                  <p class="card-text">
+                    Enjoy serenity from Monday to Thursday with private villa access, lush views, and a relaxing
+                    atmosphere.
+                  </p>
+
+                  <ul class="card-meta-list">
+                    <li class="card-meta-item">
+                      <div class="meta-box">
+                        <ion-icon name="time"></ion-icon>
+                        <p class="text">1 Day</p>
+                      </div>
+                    </li>
+                    <li class="card-meta-item">
+                      <div class="meta-box">
+                        <ion-icon name="people"></ion-icon>
+                        <p class="text">max: 6/7</p>
+                      </div>
+                    </li>
+
+                  </ul>
+                </div>
+
+                <div class="card-price">
+                  <div class="wrapper">
+                    <p class="reviews">(18 reviews)</p>
+                    <div class="card-rating">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star-outline"></ion-icon>
+                    </div>
+                  </div>
+
+                  <p class="price">
+                    ₹6000
+
+                  </p>
+
+                  <button class="btn btn-secondary">Book Now</button>
+                </div>
+
+              </div>
+            </li>
+
+            <!-- Friday Package -->
+            <li>
+              <div class="package-card">
+
+                <figure class="card-banner">
+                  <img src="./assets/images/packege-2.jpg" alt="Friday Escape Package" loading="lazy">
+                </figure>
+
+                <div class="card-content">
+                  <h3 class="h3 card-title">Friday Escape Package</h3>
+                  <p class="card-text">
+                    Begin your weekend early with a cozy villa experience, scenic surroundings, and complete relaxation.
+                  </p>
+
+                  <ul class="card-meta-list">
+                    <li class="card-meta-item">
+                      <div class="meta-box">
+                        <ion-icon name="time"></ion-icon>
+                        <p class="text">1 Day</p>
+                      </div>
+                    </li>
+                    <li class="card-meta-item">
+                      <div class="meta-box">
+                        <ion-icon name="people"></ion-icon>
+                        <p class="text">max: 6/7</p>
+                      </div>
+                    </li>
+
+                  </ul>
+                </div>
+
+                <div class="card-price">
+                  <div class="wrapper">
+                    <p class="reviews">(22 reviews)</p>
+                    <div class="card-rating">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star-half-outline"></ion-icon>
+                      <ion-icon name="star-outline"></ion-icon>
+                    </div>
+                  </div>
+
+                  <p class="price">
+                    ₹7500
+
+                  </p>
+
+                  <button class="btn btn-secondary">Book Now</button>
+                </div>
+
+              </div>
+            </li>
+
+            <!-- Saturday Premium -->
+            <li>
+              <div class="package-card">
+
+                <figure class="card-banner">
+                  <img src="./assets/images/packege-3.jpg" alt="Saturday Premium Getaway" loading="lazy">
+                </figure>
+
+                <div class="card-content">
+                  <h3 class="h3 card-title">Saturday Premium Getaway</h3>
+                  <p class="card-text">
+                    Spend your Saturday in the peaceful ambiance of Lonavala’s natural surroundings with a comfortable
+                    villa stay..
+                  </p>
+
+                  <ul class="card-meta-list">
+                    <li class="card-meta-item">
+                      <div class="meta-box">
+                        <ion-icon name="time"></ion-icon>
+                        <p class="text">1 Day</p>
+                      </div>
+                    </li>
+                    <li class="card-meta-item">
+                      <div class="meta-box">
+                        <ion-icon name="people"></ion-icon>
+                        <p class="text">max: 6/7</p>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="card-price">
+                  <div class="wrapper">
+                    <p class="reviews">(35 reviews)</p>
+                    <div class="card-rating">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                    </div>
+                  </div>
+
+                  <p class="price">
+                    ₹12,500
+
+                  </p>
+
+                  <button class="btn btn-secondary">Book Now</button>
+                </div>
+
+              </div>
+            </li>
+
+            <!-- Sunday Refresh -->
+            <li>
+              <div class="package-card">
+
+                <figure class="card-banner">
+                  <img src="./assets/images/package-4.jpg" alt="Sunday Refresh Package" loading="lazy">
+                </figure>
+
+                <div class="card-content">
+                  <h3 class="h3 card-title">Sunday Refresh Package</h3>
+                  <p class="card-text">
+                    Unwind and recharge before the new week in a tranquil villa surrounded by greenery and calm.
+                  </p>
+
+                  <ul class="card-meta-list">
+                    <li class="card-meta-item">
+                      <div class="meta-box">
+                        <ion-icon name="time"></ion-icon>
+                        <p class="text">1 Day</p>
+                      </div>
+                    </li>
+                    <li class="card-meta-item">
+                      <div class="meta-box">
+                        <ion-icon name="people"></ion-icon>
+                        <p class="text">max: 6/7</p>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="card-price">
+                  <div class="wrapper">
+                    <p class="reviews">(27 reviews)</p>
+                    <div class="card-rating">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                    </div>
+                  </div>
+
+                  <p class="price">
+                    ₹7000
+
+                  </p>
+
+                  <button class="btn btn-secondary">Book Now</button>
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+          <button class="btn btn-primary">View All Packages</button>
+
+        </div>
+      </section>
+
+
+
+      <section class="section category" aria-label="category">
+        <div class="container">
+
+          <h2 class="h2 section-title">
+            Amenities
+          </h2>
+
+          <p class="section-text">
+            Enjoy a wide range of modern amenities designed to elevate your stay and bring you the comfort of home in
+            the heart of Lonavala.
+          </p>
+
+          <ul class="has-scrollbar">
+            <li class="scrollbar-item">
+              <div class="popular-card">
+
+                <figure class="card-img">
+                  <img src="./assets/images/amenities-1.jpg" alt="San miguel, italy" loading="lazy">
+                </figure>
+
+                <div class="card-content" style="width: 40%;">
+
+                  <h3 class="h3 card-title" style="font-size: 1rem;margin-bottom: 0px;">
+                    <a href="#">Swimming Pool</a>
+                  </h3>
+                </div>
+
+              </div>
+
+            </li>
+
+            <li class="scrollbar-item">
+              <div class="popular-card">
+
+                <figure class="card-img">
+                  <img src="./assets/images/amenities-2.jpg" alt="San miguel, italy" loading="lazy">
+                </figure>
+
+                <div class="card-content" style="width: 40%;">
+
+                  <h3 class="h3 card-title" style="font-size: 1rem;margin-bottom: 0px;">
+                    <a href="#">Studio Room</a>
+                  </h3>
+                </div>
+
+              </div>
+
+            </li>
+
+            <li class="scrollbar-item">
+              <div class="popular-card">
+
+                <figure class="card-img">
+                  <img src="./assets/images/amenities-3.jpg" alt="San miguel, italy" loading="lazy">
+                </figure>
+
+                <div class="card-content" style="width: 40%;">
+
+                  <h3 class="h3 card-title" style="font-size: 1rem;margin-bottom: 0px;">
+                    <a href="#">Backyard Garden</a>
+                  </h3>
+                </div>
+
+              </div>
+
+            </li>
+
+            <li class="scrollbar-item">
+              <div class="popular-card">
+
+                <figure class="card-img">
+                  <img src="./assets/images/amenities-4.jpg" alt="San miguel, italy" loading="lazy">
+                </figure>
+
+                <div class="card-content" style="width: 40%;">
+
+                  <h3 class="h3 card-title" style="font-size: 1rem;margin-bottom: 0px;">
+                    <a href="#">Spacious Bedrooms</a>
+                  </h3>
+                </div>
+
+              </div>
+
+            </li>
+
+            <li class="scrollbar-item">
+              <div class="popular-card">
+
+                <figure class="card-img">
+                  <img src="./assets/images/amenities-5.jpg" alt="San miguel, italy" loading="lazy">
+                </figure>
+
+                <div class="card-content" style="width: 40%;">
+
+                  <h3 class="h3 card-title" style="font-size: 1rem;margin-bottom: 0px;">
+                    <a href="#">Terrace dining </a>
+                  </h3>
+                </div>
+
+              </div>
+
+            </li>
+          </ul>
+
+        </div>
+      </section>
+
+
+      <!-- 
+        - #GALLERY
+      -->
+
+      <section class="gallery" id="gallery">
+        <div class="container">
+
+          <p class="section-subtitle">Photo Gallery</p>
+
+          <h2 class="h2 section-title">Villa Views & Vibes</h2>
+
+          <p class="section-text">
+            Take a visual tour of our villa, views, and experiences — every picture tells a story of comfort and
+            beauty.
+          </p>
+
+          <ul class="gallery-list">
+
+            <li class="gallery-item">
+              <figure class="gallery-image">
+                <img src="./assets/images/gallery-1.jpg" alt="Gallery image">
+              </figure>
+            </li>
+
+            <li class="gallery-item">
+              <figure class="gallery-image">
+                <img src="./assets/images/gallery-2.jpg" alt="Gallery image">
+              </figure>
+            </li>
+
+            <li class="gallery-item">
+              <figure class="gallery-image">
+                <img src="./assets/images/gallery-3.jpg" alt="Gallery image">
+              </figure>
+            </li>
+
+            <li class="gallery-item">
+              <figure class="gallery-image">
+                <img src="./assets/images/gallery-4.jpg" alt="Gallery image">
+              </figure>
+            </li>
+
+            <li class="gallery-item">
+              <figure class="gallery-image">
+                <img src="./assets/images/gallery-5.jpg" alt="Gallery image">
+              </figure>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #CTA
+      -->
+
+      <section class="cta" id="contact">
+        <div class="container">
+
+          <div class="cta-content">
+            <p class="section-subtitle">Villa Escape</p>
+
+            <h2 class="h2 section-title">Escape the Ordinary — Discover Your Private Villa Retreat in Lonavala</h2>
+
+            <p class="section-text">
+              Relax in beautifully designed villa with modern amenities, peaceful surroundings, and everything you need for the perfect escape.
+            </p>
+          </div>
+
+          <button class="btn btn-secondary">Contact Us !</button>
+
+        </div>
+      </section>
+
+    </article>
+  </main>
+
+
+
+
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer">
+
+    <div class="footer-top">
+      <div class="container">
+
+        <div class="footer-brand">
+
+          <a href="#" class="logo">
+            <h1 style="color: white;">VILLA</h1>
+          </a>
+
+          <p class="footer-text">
+            Discover beautifully designed villa in Lonavala, where comfort, privacy, and scenic views create the perfect getaway.
+          </p>
+
+        </div>
+
+        <div class="footer-contact">
+
+          <h4 class="contact-title">Contact Us</h4>
+
+          <p class="contact-text">
+            Feel free to contact and reach us !!
+          </p>
+
+          <ul>
+
+            <li class="contact-item">
+              <ion-icon name="call-outline"></ion-icon>
+
+              <a href="tel:+91 9769539666" class="contact-link">+91 9769539666</a>
+            </li>
+
+            <li class="contact-item">
+              <ion-icon name="mail-outline"></ion-icon>
+
+              <a href="mailto:kkunal.ghogrre1904@hotmail.com" class="contact-link">kkunal.ghogrre1904@hotmail.com</a>
+            </li>
+
+            <li class="contact-item">
+              <div>
+                <ion-icon style="font-size: 18px;" name="location-outline"></ion-icon>
+              </div>
+              <div>
+              <address>Villa-58, Puraniks Sayama, Leisurely Villa, road, near Bigg boss house, behind bondhe high school, Bhangarwadi, Lonavala, Kusgaon Budruk, Maharashtra 410401</address>
+            </div>
+            </li>
+
+          </ul>
+
+        </div>
+
+        <div class="footer-form">
+
+          <p class="form-text">
+            Subscribe our newsletter for more update & news !!
+          </p>
+
+          <form action="" class="form-wrapper">
+            <input type="email" name="email" class="input-field" placeholder="Enter Your Email" required>
+
+            <button type="submit" class="btn btn-secondary">Subscribe</button>
+          </form>
+
+        </div>
+
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+
+        <p class="copyright">
+          &copy; 2025 <a href="">Pratik Sonar</a>. All rights reserved
+        </p>
+
+        <ul class="footer-bottom-list">
+
+          <li>
+            <a href="#" class="footer-bottom-link">Privacy Policy</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-bottom-link">Term & Condition</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-bottom-link">FAQ</a>
+          </li>
+
+        </ul>
+
+      </div>
+    </div>
+
+  </footer>
+
+
+
+
+
+  <!-- 
+    - #GO TO TOP
+  -->
+
+  <a href="#top" class="go-top" data-go-top>
+    <ion-icon name="chevron-up-outline"></ion-icon>
+  </a>
+
+
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
